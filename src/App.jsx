@@ -20,7 +20,7 @@ function App() {
       <Auth0Provider
         domain={process.env.REACT_APP_domain}
         clientId={process.env.REACT_APP_clientID}
-        redirectUri="http://localhost:3000/boardlist"
+        redirectUri={process.env.REACT_APP_redirectUri}
       >
         <BrowserRouter>
           <Header />
