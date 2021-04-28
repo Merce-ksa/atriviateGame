@@ -1,0 +1,53 @@
+@import '../../sass/globals.scss';
+
+  .accordion__section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: $Font;
+  }
+  
+  .accordion {
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    border: none;
+    background-color: $color-primary;
+    color: $color-light;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.6s ease;
+  }
+  
+  .accordion:hover,
+  .active {
+    background-color: $color-secondary;
+  }
+
+  .accordion__title {
+    font-weight: $regular;
+    font-size: 20px;
+  }
+  
+  .accordion__content {
+    background-color: $color-light;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+  }
+
+  .accordion__text {
+    padding: 18px;
+    font-size: 18px;
+    font-weight: $regular;
+  }
+
+  .action-link-container {
+    display: flex;
+    justify-content: center;
+    
+    button, a {
+      width: 95px;
+      margin: 0 10px;
+    }
+  }

@@ -1,0 +1,86 @@
+@import '../../sass/globals';
+
+.dashboard {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .background-dashboard {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+
+        img {
+            filter: blur(60px);
+        }
+    }
+
+    .logo-container{
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 300px;
+            margin-top: 80px;
+        }
+    }
+    
+    p {
+        max-width: 60%;
+        margin: auto;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 22px;
+        color: $color-dark;
+    }
+
+    .button-action {
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        padding: 25px 0;
+        font-size: 20px;
+        font-weight: $thin;
+        color: $color-dark;
+        letter-spacing: 1px;
+        transition: 0.4s;
+    }
+
+    .button-action:hover {
+        font-size: 22px;
+        font-weight: $regular;
+    }
+
+    .button-action:active {
+        transform: scale(0.9);
+    }
+}
+
+.dashboard::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.mesenterio-studio {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    position: fixed;
+    bottom: 0;
+    background-color: $color-secondary;
+
+    .brand-name {
+       display: flex;
+       align-items: center;
+       font-size: 20px;
+       color: $color-light;
+    }
+}

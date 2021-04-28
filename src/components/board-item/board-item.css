@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.accordion__section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 18px;
+  border: none;
+  background-color: #84b7d3;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.accordion:hover,
+.active {
+  background-color: #618c71;
+}
+
+.accordion__title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.accordion__content {
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease;
+  transition: max-height 0.6s ease;
+}
+
+.accordion__text {
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.action-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.action-link-container button, .action-link-container a {
+  width: 95px;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=board-item.css.map */

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.board-list a {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #84b7d3;
+  border: none;
+  border-radius: 5px;
+}
+
+.board-list {
+  max-width: 70%;
+}
+
+.board-list h1 {
+  padding: 30px;
+  color: #618c71;
+}
+
+.board-list a {
+  width: 150px;
+  margin-top: 40px;
+  background-color: #84b7d3;
+}
+/*# sourceMappingURL=board-list.css.map */

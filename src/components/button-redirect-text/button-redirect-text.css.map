@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,6GAAI;ADEZ,AC6BA,qBD7BqB,CC6Bb;EACJ,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,gBAAgB,EAlCJ,OAAO;EAmCnB,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG;CACrB;;ADrCD,AAAA,qBAAqB,CAAC;EAEpB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,KAAK,ECDO,KAAkB;EDE9B,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "button-redirect-text.scss",
+        "../../sass/_globals.scss"
+    ],
+    "names": [],
+    "file": "button-redirect-text.css"
+}

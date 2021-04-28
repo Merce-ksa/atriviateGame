@@ -1,0 +1,12 @@
+@import '../../sass/globals';
+
+.button-action {
+    @extend %button;
+    outline:none;
+    cursor: pointer;
+    
+    img {
+        width: 30px;
+        height: 30px;
+      }
+}

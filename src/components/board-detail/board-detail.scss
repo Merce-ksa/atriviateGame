@@ -1,0 +1,37 @@
+@import '../../sass/globals';
+
+
+.form {
+    width: 100%;
+    
+    label {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+    }
+    
+    input, select {
+        height: 35px;
+        margin-top: 10px;
+        padding: 0 10px;
+        border-radius: $radius;
+        border: 2px solid $color-primary;
+        font-size: 20px;
+        font-weight: $light;
+        outline: none;
+    }
+}
+
+.detail-buttons {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+
+    button, a {
+        @extend%button; 
+        width: 150px;
+        margin: 40px 10px;
+        background-color: $color-primary;
+    }
+}

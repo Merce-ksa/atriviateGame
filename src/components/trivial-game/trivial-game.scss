@@ -1,0 +1,122 @@
+@import '../../sass/globals';
+
+.trivial-game-content {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+    .title-container {
+        width: 400px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    a {
+        width: 90px;
+        padding: 10px;
+        margin: auto;
+        font-size: 22px !important;
+    }
+
+    .question-container {
+        width: 400px;
+    }
+}
+
+.title-container {
+    .numeration {
+        margin-top: 0;
+        font-size: 22px;
+        color: $color-secondary;
+    }
+
+    .score-container {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20x;
+    }
+}
+
+.score-container {
+    color: $color-secondary;
+    b {
+        font-size: 26px;
+    }
+}
+
+.question-container {
+    margin-top: 10px;
+    position: relative;
+
+    .question {
+        min-height: 80px;
+        padding: 0 0 15px 0;
+        font-size: 22px;
+        text-align: left;
+        font-weight: $light;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        margin: 20px 0;
+        padding: 5px;
+        background-color: $color-secondary;
+        font-size: 18px;
+        font-weight: $light;
+        letter-spacing: 1.5px;
+        color: $color-light;
+        cursor: pointer;
+    }
+
+    .check-answer {
+        position: absolute;
+        top: 20%;
+        bottom: 20%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 200px;
+        margin: auto 0;
+        animation: show 1s linear forwards;
+        animation: beat 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    }
+
+    .hit {
+        color: $color-correct;
+    }
+
+    .fail {
+        color: $color-wrong;
+    }
+
+}
+
+.next-question {
+    @extend%button; 
+    outline: none;
+    background-color: transparent !important;
+    animation: show 0.5s linear forwards;
+    img {
+        width: 15%;
+    } 
+}
+
+@keyframes show {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.2)
+    }
+}

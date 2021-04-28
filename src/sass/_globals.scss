@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$color-primary: #84b7d3;
+$color-secondary: #618c71;
+$color-dark: rgb(28, 37, 65);
+$color-light: rgb(255, 255, 255);
+
+$color-correct: rgb(68, 160, 68);;
+$color-wrong: rgb(245, 62, 108);
+
+$Font: 'Raleway', sans-serif;
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+$radius: 5px;
+
+@mixin resetPage {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+%button {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    border: none;
+    border-radius: 5px;
+}

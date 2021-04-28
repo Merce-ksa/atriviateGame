@@ -1,0 +1,22 @@
+@import '../../sass/globals.scss';
+
+.board-list{
+    max-width: 70%;
+    
+    h1 {
+        padding: 30px;
+        color: $color-secondary;
+    }
+
+    a {
+        @extend%button; 
+        width: 150px;
+        margin-top: 40px;
+        background-color: $color-primary;
+    }
+}
+
+
+
+
+

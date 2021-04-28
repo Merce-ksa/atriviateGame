@@ -1,0 +1,10 @@
+@import '../../sass/globals';
+
+.button-action-text {
+  @extend %button;
+  font-size: 16px;
+  color: $color-light;
+  font-weight: 400;
+  outline:none;
+  cursor: pointer;
+}

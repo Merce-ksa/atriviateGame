@@ -1,0 +1,12 @@
+@import '../../sass/globals';
+
+.button-redirect {
+    @extend %button;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+   
+

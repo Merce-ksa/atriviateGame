@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.detail-buttons button, .detail-buttons a {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #84b7d3;
+  border: none;
+  border-radius: 5px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 22px;
+}
+
+.form input, .form select {
+  height: 35px;
+  margin-top: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #84b7d3;
+  font-size: 20px;
+  font-weight: 300;
+  outline: none;
+}
+
+.detail-buttons {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px auto;
+}
+
+.detail-buttons button, .detail-buttons a {
+  width: 150px;
+  margin: 40px 10px;
+  background-color: #84b7d3;
+}
+/*# sourceMappingURL=board-detail.css.map */
