@@ -12,23 +12,21 @@ import ButtonRedirectText from '../button-redirect-text/button-redirect-text';
 function TrivialGame({ boardsGame, questionsGame, actions }) {
   const { id: boardId } = useParams();
 
-  if (boardId) {
-    useEffect(() => {
-      actions.loadBoard(+boardId);
-    }, []);
+  useEffect(() => {
+    actions.loadBoard(+boardId);
+  }, []);
 
-    useEffect(() => {
-      if (boardsGame.selectedBoard) {
-        actions.loadQuestionsApi(boardsGame.selectedBoard);
-      }
-    }, [boardsGame.selectedBoard]);
+  useEffect(() => {
+    if (boardsGame.selectedBoard) {
+      actions.loadQuestionsApi(boardsGame.selectedBoard);
+    }
+  }, [boardsGame.selectedBoard]);
 
-    useEffect(() => {
-      if (questionsGame.questions.length > 0) {
-        actions.nextQuestion();
-      }
-    }, [questionsGame.questions]);
-  }
+  useEffect(() => {
+    if (questionsGame.questions.length > 0) {
+      actions.nextQuestion();
+    }
+  }, [questionsGame.questions]);
 
   if (!questionsGame.currentQuestion) {
     return (
