@@ -14,15 +14,17 @@ function BoardDetail({ match: { params: { id } }, boardsGame, actions }) {
     difficulty: 'easy'
   });
 
-  if (id) {
-    useEffect(() => {
+  useEffect(() => {
+    if (id) {
       actions.loadBoard(id);
-    }, []);
+    }
+  }, []);
 
-    useEffect(() => {
+  useEffect(() => {
+    if (id) {
       setData({ ...boardsGame.selectedBoard });
-    }, [boardsGame.selectedBoard]);
-  }
+    }
+  }, [boardsGame.selectedBoard]);
 
   const handleInputChange = (event) => {
     setData({

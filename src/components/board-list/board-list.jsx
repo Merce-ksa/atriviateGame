@@ -10,7 +10,9 @@ function BoardList({ boardsGame }) {
     <main className="board-list">
       <h1>Boards</h1>
       {boardsGame.boards && boardsGame
-        .boards.map((board) => (<BoardItem board={board} key={board.id} />))}
+        .boards.map((board) => (
+          <BoardItem board={board} key={board.id} />
+        ))}
       <ButtonRedirectText url="/edit" value="New board" />
     </main>
   );
