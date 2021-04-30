@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { Helmet } from 'react-helmet';
 import Dashboard from './components/dashboard/dashboard';
 import Header from './components/header/header';
 import BoardList from './components/board-list/board-list';
@@ -17,6 +18,13 @@ import store from './redux/stores/configure-store';
 function App() {
   return (
     <Provider store={store}>
+      <Helmet>
+        <meta property="og:title" content="aTriviate" />
+        <meta property="og:image" content="../public/img/atriviate-logo" />
+        <meta property="og:description" content="Application trivial game" />
+        <meta property="og:url" content="//atriviate.netlify.app/" />
+        <title>aTriviate</title>
+      </Helmet>
       <Auth0Provider
         domain={process.env.REACT_APP_domain}
         clientId={process.env.REACT_APP_clientID}
