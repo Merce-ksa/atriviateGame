@@ -2,6 +2,10 @@
 
 Train your brain and have fun with our history, geography, art, music, science and nature and sports questions. Customize your boards to get to the top! [Atríviate Game](https://atriviate.netlify.app/)
 
+![home](https://user-images.githubusercontent.com/61200707/116747841-ceb9c300-a9fe-11eb-9af6-27d945adc277.png)
+![boards](https://user-images.githubusercontent.com/61200707/116747851-d24d4a00-a9fe-11eb-817d-00a518d38672.png)
+![game](https://user-images.githubusercontent.com/61200707/116747872-d6796780-a9fe-11eb-83b6-faa14f179aec.png)
+
 ## Dependencies
 
 This project is bootstrapped with React.
