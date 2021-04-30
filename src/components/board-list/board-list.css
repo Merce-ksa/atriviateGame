@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.board-list a {
+/* Color Theme Swatches in RGBA */
+.board-list .boards .board .board__item {
   height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,23 +11,70 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #84b7d3;
   border: none;
   border-radius: 5px;
+  font-family: "Raleway", sans-serif;
 }
 
 .board-list {
-  max-width: 70%;
+  background-color: #8fd8d1;
 }
 
-.board-list h1 {
+.board-list .boards {
+  width: 70%;
+  min-height: 500px;
+}
+
+.board-list .boards h1 {
   padding: 30px;
-  color: #618c71;
+  color: #4da5a5;
+}
+
+.board-list .boards .board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.board-list .boards .board .board__item {
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .board-list .boards h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .board-list .boards .board {
+    min-height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .board-list a {
-  width: 150px;
-  margin-top: 40px;
-  background-color: #84b7d3;
+  width: 200px;
+  background-color: #4da5a5;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.board-list a:hover {
+  font-weight: 800;
+  color: #8fd8d1;
 }
 /*# sourceMappingURL=board-list.css.map */

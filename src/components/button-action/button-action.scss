@@ -1,9 +1,12 @@
 @import '../../sass/globals';
 
 .button-action {
-    @extend %button;
-    outline:none;
+    @extend%button;
+    width: 35px;
+    outline: none;
     cursor: pointer;
+    background-color: transparent;
+
     
     img {
         width: 30px;

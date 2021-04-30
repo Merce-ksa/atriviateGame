@@ -35,7 +35,8 @@ function BoardDetail({ match: { params: { id } }, boardsGame, actions }) {
 
   return (
     <main className="detail-container">
-      <h1>Board Name</h1>
+
+      <h1>{id ? `${data.name}` : 'Board Name'}</h1>
       <section className="form">
         <label htmlFor="name">
           Board name:

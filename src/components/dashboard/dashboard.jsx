@@ -7,6 +7,9 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
+      <div className="background-dashboard">
+        <img src={`${process.env.PUBLIC_URL}/img/atriviate-background.jpg`} alt="background" />
+      </div>
 
       <div className="logo-container">
         <img src={`${process.env.PUBLIC_URL}/img/atriviate-brand.png`} alt="atriviate-brand" />
@@ -25,9 +28,6 @@ export default function Dashboard() {
 
       <div className="mesenterio-studio">
         <span className="brand-name">Mesenterio Studio</span>
-      </div>
-      <div className="background-dashboard">
-        <img src={`${process.env.PUBLIC_URL}/img/atriviate-background.jpg`} alt="background" />
       </div>
 
     </div>

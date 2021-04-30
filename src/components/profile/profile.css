@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Color Theme Swatches in RGBA */
 .profile {
-  margin-top: 50px;
+  background-color: #8fd8d1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .profile .card {
@@ -9,7 +19,7 @@
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #1c2541;
+  color: #303030;
 }
 
 .profile .card h2, .profile .card h4 {
@@ -26,16 +36,35 @@
 }
 
 .profile .card .button-logout {
-  margin-top: 20px;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: transparent;
+  border-radius: 50%;
   border: transparent;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .profile .card .button-logout img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile .card .button-logout:hover {
+  background-color: #f25e6a;
 }
 
 .profile .card .back-boardlist {
@@ -45,17 +74,17 @@
   margin-top: 30px;
   display: inline-block;
   border-radius: 0 0 10px 10px;
-  background-color: #84b7d3;
+  background-color: #f25e6a;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
-  color: #1c2541;
+  color: white;
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .profile .card .back-boardlist:hover {
-  opacity: 0.7;
+  background-color: #4da5a5;
 }
 /*# sourceMappingURL=profile.css.map */

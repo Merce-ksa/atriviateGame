@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.detail-buttons button, .detail-buttons a {
+/* Color Theme Swatches in RGBA */
+.detail-container .detail-buttons button, .detail-container .detail-buttons a {
   height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,16 +11,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #84b7d3;
   border: none;
   border-radius: 5px;
+  font-family: "Raleway", sans-serif;
 }
 
-.form {
+.detail-container {
+  max-width: 40%;
+  margin-top: 30px;
+}
+
+.detail-container .form {
   width: 100%;
+  margin-top: 30px;
 }
 
-.form label {
+.detail-container .form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,18 +37,18 @@
   font-size: 22px;
 }
 
-.form input, .form select {
+.detail-container .form input, .detail-container .form select {
   height: 35px;
   margin-top: 10px;
   padding: 0 10px;
   border-radius: 5px;
-  border: 2px solid #84b7d3;
-  font-size: 20px;
-  font-weight: 300;
+  border: 1px solid #f25e6a;
+  font-size: 18px;
+  font-weight: 100;
   outline: none;
 }
 
-.detail-buttons {
+.detail-container .detail-buttons {
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,9 +59,26 @@
   margin: 50px auto;
 }
 
-.detail-buttons button, .detail-buttons a {
+.detail-container .detail-buttons button, .detail-container .detail-buttons a {
   width: 150px;
   margin: 40px 10px;
-  background-color: #84b7d3;
+  background-color: #f25e6a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.detail-container .detail-buttons button:hover, .detail-container .detail-buttons a:hover {
+  background-color: #4da5a5;
+}
+
+.detail-container .detail-buttons button:active, .detail-container .detail-buttons a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media only screen and (max-width: 768px) {
+  .detail-container {
+    max-width: 80%;
+  }
 }
 /*# sourceMappingURL=board-detail.css.map */

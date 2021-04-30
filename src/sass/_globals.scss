@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$color-primary: #84b7d3;
-$color-secondary: #618c71;
-$color-dark: rgb(28, 37, 65);
+$color-primary: rgba(242, 94, 106, 1);
+$color-secondary: rgba(77, 165, 165, 1);
+
+$color-detail-1: rgba(143, 216, 209, 1);
+$color-detail-2: rgba(242, 178, 155, 1);
+$color-detail-3: rgba(242, 142, 133, 1);
+
+$color-dark: rgb(48, 48, 48);
 $color-light: rgb(255, 255, 255);
 
-$color-correct: rgb(68, 160, 68);;
+$color-correct: rgb(68, 160, 68);
 $color-wrong: rgb(245, 62, 108);
+
+/* Color Theme Swatches in RGBA */
+$color-1: rgba(242, 94, 106, 1);
+$color-2: rgba(77, 165, 165, 1);
+$color-3: rgba(143, 216, 209, 1);
+$color-4: rgba(242, 178, 155, 1);
+$color-5: rgba(242, 142, 133, 1);
+
 
 $Font: 'Raleway', sans-serif;
 
@@ -33,7 +46,7 @@ $radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-primary;
     border: none;
     border-radius: 5px;
+    font-family: $Font;
 }

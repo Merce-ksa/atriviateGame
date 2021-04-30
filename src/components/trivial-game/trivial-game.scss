@@ -15,9 +15,10 @@
 
     a {
         width: 90px;
-        padding: 10px;
+        padding: 5px;
         margin: auto;
-        font-size: 22px !important;
+        font-size: 20px !important;
+        background-color: $color-primary;
     }
 
     .question-container {
@@ -44,6 +45,7 @@
 
 .score-container {
     color: $color-secondary;
+
     b {
         font-size: 26px;
     }
@@ -72,6 +74,13 @@
         letter-spacing: 1.5px;
         color: $color-light;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $color-detail-1;
+            font-weight: $bold;
+            color: $color-secondary;
+        }
     }
 
     .check-answer {

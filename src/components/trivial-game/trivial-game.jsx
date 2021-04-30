@@ -57,7 +57,7 @@ function TrivialGame({ boardsGame, questionsGame, actions }) {
               <b>{questionsGame.questions.length - questionsGame.currentQuestion.answersOK}</b>
             </p>
           </div>
-          <ButtonRedirectText url="/boardlist" value="Back" />
+          <ButtonRedirectText url="/boardlist" value="Boards" />
         </section>
       </main>
     );

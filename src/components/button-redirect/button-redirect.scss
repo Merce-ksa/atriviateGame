@@ -1,7 +1,8 @@
 @import '../../sass/globals';
 
 .button-redirect {
-    @extend %button;
+    @extend%button;
+    width: 35px;
 
     img {
         width: 30px;

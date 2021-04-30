@@ -1,22 +1,56 @@
 @import '../../sass/globals.scss';
+@import '../../sass/mediaqueries.scss';
 
 .board-list{
-    max-width: 70%;
+    background-color: $color-detail-1;
     
-    h1 {
-        padding: 30px;
-        color: $color-secondary;
+    .boards {
+        width: 70%;
+        min-height: 500px;
+
+        h1 {
+            padding: 30px;
+            color: $color-secondary;
+        }
+
+        .board {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .board__item {
+                @extend%button; 
+                width: 150px;
+                margin-bottom: 40px;
+            }
+        }
+
+        @include media(tablet){
+            h1 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .board {
+                min-height: auto;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
     a {
-        @extend%button; 
-        width: 150px;
-        margin-top: 40px;
-        background-color: $color-primary;
+        width: 200px;
+        background-color: $color-secondary;
+        transition: 0.3s ease;
+
+        &:hover {
+            font-weight: $extra-bold;
+            color: $color-detail-1;
+        }
     }
+    
 }
-
-
 
 
 

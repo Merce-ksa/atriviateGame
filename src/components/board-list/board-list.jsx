@@ -8,12 +8,16 @@ import ButtonRedirectText from '../button-redirect-text/button-redirect-text';
 function BoardList({ boardsGame }) {
   return (
     <main className="board-list">
-      <h1>Boards</h1>
-      {boardsGame.boards && boardsGame
-        .boards.map((board) => (
-          <BoardItem board={board} key={board.id} />
-        ))}
-      <ButtonRedirectText url="/edit" value="New board" />
+      <div className="boards">
+        <h1>Boards</h1>
+        <div className="board">
+          {boardsGame.boards && boardsGame
+            .boards.map((board) => (
+              <BoardItem board={board} key={board.id} className="board__item" />
+            ))}
+        </div>
+      </div>
+      <ButtonRedirectText url="/edit" value="New board" className="new-board" />
     </main>
   );
 }
