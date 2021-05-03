@@ -29,6 +29,10 @@
 
     @include media(mobile-l) {
         width: 90%;
+
+        .title-container {
+            width: 90%;
+        }
         
         .question-container {
             width: 90%;

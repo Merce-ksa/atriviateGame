@@ -55,6 +55,9 @@
   .trivial-game-content {
     width: 90%;
   }
+  .trivial-game-content .title-container {
+    width: 90%;
+  }
   .trivial-game-content .question-container {
     width: 90%;
   }
