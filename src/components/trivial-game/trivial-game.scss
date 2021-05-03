@@ -1,4 +1,5 @@
 @import '../../sass/globals';
+@import '../../sass/mediaqueries.scss';
 
 .trivial-game-content {
     width: 100%;
@@ -6,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;   
+    box-sizing: border-box;
 
     .title-container {
         width: 400px;
@@ -23,6 +25,14 @@
 
     .question-container {
         width: 400px;
+    }
+
+    @include media(mobile-l) {
+        width: 90%;
+        
+        .question-container {
+            width: 90%;
+        }
     }
 }
 

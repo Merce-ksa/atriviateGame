@@ -1,6 +1,7 @@
 @import '../../sass/globals';
 
 .header-container {
+    box-sizing: border-box;
     background-color: $color-detail-1;
 }
 
